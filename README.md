@@ -1,2 +1,8 @@
 # autism-diagnoser
 Autism Diagnoser using EEG
+
+The current method of diagnosing autism spectrum disorder (ASD) relies solely on observing behavior, which is subjective and can lead to misdiagnosis. In an effort to address this issue, researchers have begun using machine learning to predict ASD from brain imaging data. However, few studies have focused on adults. This particular study aimed to determine if electroencephalography (EEG) data could be used to train machine learning models that could accurately classify ASD individuals from a group of Dutch adults who were performing two visual tasks.
+
+To reduce biases in the methodology, highly-automated preprocessing and feature engineering pipeline was used. Grid search was also used to choose the highest performing models from five well-established learning algorithms. The boundary detection task had the highest classification accuracy. By modifying the learning algorithms to include an intermediate regression step, the study achieved higher mean classification performance than traditional classification, which also allowed for variable tolerance for sensitivity and specificity by adjusting the threshold parameter. This makes the technique applicable for clinical use. The dataset included ASD diagnosis and Autism Quotient-Short scores as target features.
+
+The study found that tree-based learning algorithms performed the best, with the most robust model being a random forest ensemble with seven features. Overall, the study provides strong evidence that EEG data can predict ASD in adults with considerable accuracy. Additionally, there is a flexible and reproducible pipeline that can be used in future studies for developing practical models.
